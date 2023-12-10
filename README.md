@@ -7,16 +7,14 @@
 > Inception: 10 december 2023   
 > Contributors: Nick Bauters
 
-## Installation
-
-### Needed software
+## First time Installation
 
 - Java 21 - OpenJDK
 - Maven 3.8.2
 - Vaadin 24
 - Spring Boot 3
-- PostgreSQL
-- Docker
+- PostgreSQL 15.1
+- Docker and Docker Desktop
 - Git and Github
 
 ### Java
@@ -28,6 +26,39 @@ Via SDKMan
 sdk install java 21.ea.35-open
 sdk use java 21.ea.35-open
 ```
+
+### Environment Variables
+
+To be able to run the project, the following local variables should be set.
+Every value states if the user can choose this for local development, or should be asked to the project owner.
+
+```yml
+# Database
+DATABASE_DB: {USER_CHOICE}
+DATABASE_USER: {USER_CHOICE}
+DATABASE_PSW: {USER_CHOICE}
+DATABASE_URL: jdbc:postgresql://localhost:5432/${DATABASE_DB}
+```
+
+This can be copied from the following step, if asked to the project owner.
+
+### Docker
+
+For the docker compose file, you need to set up the .env file in the root of the project.
+This file may not be persisted to the repository, as it contains sensitive information.
+This should contain:
+
+```
+DATABASE_DB={YOUR_DATABASE_NAME}
+DATABASE_USER={YOUR_USER}
+DATABASE_PSW={YOUR_PASSWORD}
+DATABASE_URL=jdbc:postgresql://localhost:5432/${DATABASE_DB}
+```
+
+Make sure these are the same as the Database environment variables.
+This file can be requested with the project owner.
+
+## 
 
 ## Running the application
 
