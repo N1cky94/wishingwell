@@ -65,3 +65,6 @@ Option 2 has been chosen
 ### Implementation
 
 [This will be documented later]
+
+A view is a frontend component with a specific URL.
+All other frontend components are named with Component at the end of the name.
