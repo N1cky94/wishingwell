@@ -1,6 +1,6 @@
-package be.archilios.wishingwell.views.helloworld;
+package be.archilios.wishingwell.frontend.helloworld;
 
-import be.archilios.wishingwell.views.MainLayout;
+import be.archilios.wishingwell.frontend.MainLayout;
 import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.notification.Notification;

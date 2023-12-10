@@ -1,6 +1,6 @@
-package be.archilios.wishingwell.views.about;
+package be.archilios.wishingwell.frontend.about;
 
-import be.archilios.wishingwell.views.MainLayout;
+import be.archilios.wishingwell.frontend.MainLayout;
 import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.html.Image;
 import com.vaadin.flow.component.html.Paragraph;
