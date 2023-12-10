@@ -3,21 +3,53 @@
 > An application that lets you manage an independent wishing list for your family and friends.
 > Come together in a group and share your wishes with each other.
 > 
-> (c) Archilios, 2023   
+> (c) [Archilios](http://archilios.be), 2023   
 > Inception: 10 december 2023   
 > Contributors: Nick Bauters
 
-## First time Installation
+## Application description
 
-- Java 21 - OpenJDK
-- Maven 3.8.2
-- Vaadin 24
-- Spring Boot 3
-- PostgreSQL 15.1
-- Docker and Docker Desktop
-- Git and Github
+This application is a web application that lets you manage an independent wishing list for your family and friends.
 
-### Java
+### Version
+
+| Version  | Date       | Status        | new functions           |
+|----------|------------|---------------|-------------------------|
+| v0.0.1   | 10/12/2023 | configuration | - Project configuration |
+
+### License and property rights
+
+This project is licensed under the [MIT License](LICENSE).
+
+The application is developed by Nick Bauters [Archilios](archilios.be/), and is being developed as a learning project.
+
+### Project Contributors
+
+| Name         | Role          | Started    | Stopped        |
+|--------------|---------------|------------|----------------|
+| Nick Bauters | Project Owner | 10/12/2023 | not applicable |
+
+## Project Current Version
+
+Currently the software is in development at version 0.0.1.
+This version is not production ready, and is only used for configuration of the project.
+
+The current features are:
+- Project configuration
+  - Database: PostgreSQL
+
+## Project Management
+
+The project is generally managed and documented via GitHub projects.
+
+If you want to contribute to this project, you can contact the project owner via GitHub.
+Before contributing, please read the [contribution guidelines](documentation/contributing.md).
+
+## Development
+
+### Before you start
+
+#### Java
 
 Via SDKMan
 [Install SDKMan](https://sdkman.io)
@@ -27,7 +59,7 @@ sdk install java 21.ea.35-open
 sdk use java 21.ea.35-open
 ```
 
-### Environment Variables
+#### Environment Variables
 
 To be able to run the project, the following local variables should be set.
 Every value states if the user can choose this for local development, or should be asked to the project owner.
@@ -42,7 +74,7 @@ DATABASE_URL: jdbc:postgresql://localhost:5432/${DATABASE_DB}
 
 This can be copied from the following step, if asked to the project owner.
 
-### Docker
+#### Docker
 
 For the docker compose file, you need to set up the .env file in the root of the project.
 This file may not be persisted to the repository, as it contains sensitive information.
@@ -58,9 +90,25 @@ DATABASE_URL=jdbc:postgresql://localhost:5432/${DATABASE_DB}
 Make sure these are the same as the Database environment variables.
 This file can be requested with the project owner.
 
-## 
+Running the application can than be done with the following command.
 
-## Running the application
+```bash
+docker-compose up -d
+```
+
+Tearing everything down, can be done with the following command.
+
+```bash
+docker-compose down -v
+```
+
+The database contains scripts for hard resets with dummy values.
+
+## Deployment
+
+### Running the application
+
+</Should be updated>
 
 The project is a standard Maven project. To run it from the command line,
 type `mvnw` (Windows), or `./mvnw` (Mac & Linux), then open
@@ -69,7 +117,9 @@ http://localhost:8080 in your browser.
 You can also import the project to your IDE of choice as you would with any
 Maven project. Read more on [how to import Vaadin projects to different IDEs](https://vaadin.com/docs/latest/guide/step-by-step/importing) (Eclipse, IntelliJ IDEA, NetBeans, and VS Code).
 
-## Deploying to Production
+### Deploying to Production
+
+</Should be updated>
 
 To create a production build, call `mvnw clean package -Pproduction` (Windows),
 or `./mvnw clean package -Pproduction` (Mac & Linux).
@@ -79,14 +129,18 @@ ready to be deployed. The file can be found in the `target` folder after the bui
 Once the JAR file is built, you can run it using
 `java -jar target/wishing-well-1.0-SNAPSHOT.jar`
 
-## Project structure
+## Documentation
 
-- `MainLayout.java` in `src/main/java` contains the navigation setup (i.e., the
-  side/top bar and the main menu). This setup uses
-  [App Layout](https://vaadin.com/docs/components/app-layout).
-- `views` package in `src/main/java` contains the server-side Java views of your application.
-- `views` folder in `frontend/` contains the client-side JavaScript views of your application.
-- `themes` folder in `frontend/` contains the custom CSS styles.
+All documentation that is not provided in this file, can be found in the documentation folder of the project.
+Next to the general documentation for contributing to this project, this folder contains 2 types of documentation.
+
+### Cooperative
+
+These are the guidelines on how to work together on this project.
+
+### Architecture
+
+This is the documentation on the architecture of the project.
 
 ## Useful links
 
