@@ -101,6 +101,21 @@ If a specific member should review, you can add them as a reviewer.
 The name of the pull request should always be the same as the issue ticket.
 And should start with the issue number.
 
+### Merging
+
+When a branch is finished and ready for merging and the pull request is approved, the branch should be merged into the master branch.
+This should always be done via the GitHub interface.
+
+The following steps may only be taken by the project owner or the creator of the branch.
+
+The following workflow should be used:
+1. Go to the project issueboard
+2. Select the pull request number on the card of the issue ticket
+3. Check if all requirements are met
+4. Select **Merge pull request**
+5. Select **Confirm merge**
+6. Select **Delete branch**
+
 ## Definitions
 
 Later in the project life, the following definitions will be added to the documentation:
