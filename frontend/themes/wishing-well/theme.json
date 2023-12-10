@@ -1,0 +1,9 @@
+{
+  "lumoImports" : [ "typography", "color", "spacing", "badge", "utility" ],
+  "assets" : {
+    "@fontsource/chewy" : {
+      "*.css" : "@fontsource/chewy",
+      "files/*" : "@fontsource/chewy/files"
+    }
+  }
+}
