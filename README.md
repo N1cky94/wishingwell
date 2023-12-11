@@ -13,9 +13,10 @@ This application is a web application that lets you manage an independent wishin
 
 ### Version
 
-| Version  | Date       | Status        | new functions           |
-|----------|------------|---------------|-------------------------|
-| v0.0.1   | 10/12/2023 | configuration | - Project configuration |
+| Version | Date       | Status        | new functions                                          |
+|---------|------------|---------------|--------------------------------------------------------|
+| v0.0.1  | 10/12/2023 | configuration | - Project configuration                                |
+| v0.0.2  | 11/12/2023 | configuration | - Spring Security</br> - GitHub template improvements  |
 
 ### License and property rights
 
@@ -31,12 +32,17 @@ The application is developed by Nick Bauters [Archilios](archilios.be/), and is 
 
 ## Project Current Version
 
-Currently the software is in development at version 0.0.1.
+Currently the software is in development at version 0.0.2.
 This version is not production ready, and is only used for configuration of the project.
 
 The current features are:
 - Project configuration
   - Database: PostgreSQL
+  - Frontend: Vaadin 24
+  - Backend: Spring Boot 3 & Java 21
+  - Security: Spring Security
+- Authentication
+  - username & password login enabled
 
 ## Project Management
 
@@ -145,12 +151,4 @@ This is the documentation on the architecture of the project.
 ## Useful links
 
 - Read the documentation at [vaadin.com/docs](https://vaadin.com/docs).
-- Follow the tutorial at [vaadin.com/docs/latest/tutorial/overview](https://vaadin.com/docs/latest/tutorial/overview).
-- Create new projects at [start.vaadin.com](https://start.vaadin.com/).
-- Search UI components and their usage examples at [vaadin.com/docs/latest/components](https://vaadin.com/docs/latest/components).
-- View use case applications that demonstrate Vaadin capabilities at [vaadin.com/examples-and-demos](https://vaadin.com/examples-and-demos).
-- Build any UI without custom CSS by discovering Vaadin's set of [CSS utility classes](https://vaadin.com/docs/styling/lumo/utility-classes). 
-- Find a collection of solutions to common use cases at [cookbook.vaadin.com](https://cookbook.vaadin.com/).
-- Find add-ons at [vaadin.com/directory](https://vaadin.com/directory).
-- Ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/vaadin) or join our [Discord channel](https://discord.gg/MYFq5RTbBn).
 - Report issues, create pull requests in [GitHub](https://github.com/vaadin).
