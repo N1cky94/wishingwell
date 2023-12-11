@@ -43,7 +43,7 @@ The current features are:
 The project is generally managed and documented via GitHub projects.
 
 If you want to contribute to this project, you can contact the project owner via GitHub.
-Before contributing, please read the [contribution guidelines](documentation/contributing.md).
+Before contributing, please read the [contribution guidelines](docs/contributing.md).
 
 ## Development
 
