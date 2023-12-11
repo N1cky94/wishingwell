@@ -4,6 +4,8 @@ import com.vaadin.flow.component.Unit;
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.html.Image;
+import com.vaadin.flow.component.icon.Icon;
+import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.login.LoginForm;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.BeforeEnterEvent;
@@ -24,15 +26,9 @@ public class LoginView extends VerticalLayout implements BeforeEnterObserver {
         setJustifyContentMode(JustifyContentMode.CENTER);
         setAlignItems(Alignment.CENTER);
         
-        Image logo = new Image("images/public/Kiwanis-strop-banner.png", "Kiwanis Stroppendrager Banner Logo");
-        logo.setMaxHeight(100, Unit.PIXELS);
-        logo.setMinHeight(20, Unit.PIXELS);
-        logo.setMaxWidth(80, Unit.PERCENTAGE);
-        
         login.setAction("login");
         add(
-                logo,
-                new H1("Mijn Stropje"),
+                new H1("Wishing Well"),
                 login
         );
     }
