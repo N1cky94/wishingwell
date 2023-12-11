@@ -26,5 +26,5 @@ auth.yml
 
 # Project Specific
 *.log
-*.txt
+*ignore.txt
 *.csv
