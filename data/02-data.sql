@@ -7,7 +7,7 @@ insert into users (name) values
 ;
 
 insert into authentication_users
-(email, password, user_id) values
-    ('nick@me.com', 'psw', 1),
-    ('kelly@me.com', 'psw', 2)
+(email, password, user_id, role) values
+    ('nick@me.com', 'psw', 1, 'ADMIN'),
+    ('kelly@me.com', 'psw', 2, 'USER')
 :
