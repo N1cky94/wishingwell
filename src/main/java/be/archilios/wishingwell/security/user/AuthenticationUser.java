@@ -1,21 +1,29 @@
 package be.archilios.wishingwell.security.user;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name="authentication_users")
 public class AuthenticationUser {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "email")
     private String username;
+    @Column(name = "password")
     private String password;
+    @Column(name = "role")
+    @Enumerated(EnumType.STRING)
     private AuthenticationRole role;
-    private boolean inactiveAccount;
     
     public AuthenticationUser() {
     }
     
-    public AuthenticationUser(Long id, String username, String password, AuthenticationRole role, boolean inactiveAccount) {
+    public AuthenticationUser(Long id, String username, String password, AuthenticationRole role) {
         this.id = id;
         this.username = username;
         this.password = password;
         this.role = role;
-        this.inactiveAccount = inactiveAccount;
     }
     
     public Long getId() {
@@ -48,13 +56,5 @@ public class AuthenticationUser {
     
     private void setRole(AuthenticationRole role) {
         this.role = role;
-    }
-    
-    public boolean isInactiveAccount() {
-        return inactiveAccount;
-    }
-    
-    private void setInactiveAccount(boolean inactiveAccount) {
-        this.inactiveAccount = inactiveAccount;
     }
 }
