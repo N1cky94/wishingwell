@@ -1,13 +1,13 @@
 ---
 name: New Documentation suggestion
-about: Create a Doccumentation issue where new documentation is added, explained or status updated
-title: [DOCUMENTATION NAME]
+about: Create a Documentation issue where new documentation is added, explained or status updated
+title: "Document: [DOCUMENTATION NAME]"
 labels: 'documentation'
 assignees: ''
-
+project: 'Wishing Well'
 ---
 
-# Documentation: <Descriptive Documentation name>
+# Documentation: [Descriptive Documentation name]
 
 ## Documentation info
 

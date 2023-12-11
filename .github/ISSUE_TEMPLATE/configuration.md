@@ -1,13 +1,13 @@
 ---
 name: New configuration suggestion
 about: Create a suggestion to add, change or remove a configuration
-title: [CONFIGURATION NAME]
+title: "Configure: [CONFIGURATION NAME]"
 labels: 'configuration'
 assignees: ''
-
+project: 'Wishing Well'
 ---
 
-# Configuration: <Descriptive Configuration name>
+# Configuration: [Descriptive Configuration name]
 
 ## Configuration info
 
