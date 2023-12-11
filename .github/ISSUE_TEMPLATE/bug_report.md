@@ -1,12 +1,12 @@
 ---
 name: Bug Report
 about: Create a report that describes a Bug and starts an investigation into fixing this bug.
-title: "Bug: [FEATURE NAME]"
+title: "Fix: [BUG NAME]"
 labels: bug
 assignees: ''
-
+project: 'Wishing Well'
 ---
-# Bug: <bug name>
+# Bug: [bug name]
 
 ## Context
 
