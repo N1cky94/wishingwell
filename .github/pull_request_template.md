@@ -1,24 +1,24 @@
 ---
 name: Standard Pull Request
-about: Create a feature story as an issue for tracking new feature suggestions
+about: Create a standard pull request
 title: "PR: #[Issue number] [Issue title]"
 labels: ''
 assignees: ''
-
+project: 'Wishing Well'
 ---
 # Pull Request: #[Issue number] [Issue title]
 
-## Describe your changes
+## Changes summary
 
-## Describe extra feedback requests if applicable
+## Required feedback
 
-## Issue ticket number and link
+- [ ] Question 1
 
 ## Checklist before requesting a review
 - [ ] I have performed a self-review of my code
 - [ ] If it is a core feature, I have added thorough tests.
 - [ ] Do we need to implement analytics?
-- [ ] Will this be part of a product update? If yes, please write one phrase about this update.
+- [ ] Do we need to implement logging?
 
 ## Checklist for a reviewer
 - [ ] Pull the repository and branch locally and manually test the changes.
