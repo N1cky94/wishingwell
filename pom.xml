@@ -58,6 +58,13 @@
             <version>2.0.0</version>
         </dependency>
 
+        <!--        ADDS SECURITY DEPENDENCIES-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <!--        ADDS DATABASE DEPENDENCIES-->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
